@@ -445,7 +445,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-button" data-modal-close>
           <svg class="modal-icon" width="11" height="11">
@@ -485,31 +485,20 @@
             placeholder="Введите текст"
           ></textarea>
           <div class="modal-check-wrap">
-            <input
-              type="checkbox"
-              name="modal-check"
-              class="modal-check visually-hidden"
-              id="modal-check"
-            />
-            <label for="modal-check" class="modal-check-text"
-              ><span>
+            <input type="checkbox" name="checkbox" class="checkbox visually-hidden" id="checkbox" />
+            <label for="checkbox" class="checkbox-label">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="#" class="modal-check-link">Условия договора</a>
+              <span class="custom-checkbox">
                 <svg class="modal-input-checkbox" width="16" height="15">
                   <use href="./images/icons-svg/symbol-defs.svg#icon-check"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю
-              <a href="" class="modal-check-link">Условия договора</a>
             </label>
-
-            <!-- <label for="modal-check" class="modal-check-text"
-              ><span
-                ><svg class="modal-check-icon" width="16" height="15">
-                  <use href="./images/icons.svg#icon-check"></use>
-                </svg>
-              </span>
-              Подпишитесь на спам</label -->
           </div>
-          <button type="submit" class="modal-btn-submit">Отправить</button>
+          <div class="btn-submit-wrap">
+            <button type="submit" class="modal-btn-submit">Отправить</button>
+          </div>
         </form>
       </div>
     </div>
